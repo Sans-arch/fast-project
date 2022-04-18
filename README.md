@@ -1,4 +1,5 @@
-# fast-project
-Project only to execute Jest tests
+# Fast-Project 🔥⚡
+Projeto feito com NodeJS.
 
-Desenvolvido por Santiago Fleitas e Matheus Ferreira
+Desenvolvido por Santiago Fleitas e Matheus Ferreira,
+
