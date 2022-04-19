@@ -1,19 +1,24 @@
 # Fast-Project 🔥⚡
 Projeto feito com NodeJS.
 
-Desenvolvido por Santiago Fleitas e Matheus Ferreira.
+*Desenvolvido por Santiago Fleitas e Matheus Ferreira.*
 
+---
  (TUTORIAL - GIT)
 
 1.	Como inicializar repositórios.
     
-    O conceito de um repósitorio se baseia  básicamente em  um "local" onde será armazenado seus arquivos , onde esses arquvivos podem ser de variados casos ( 
-    códigos, imagens, áudios, vídeos ou qualquer coisa relacionada a esse projeto).Para se iniciar um repositório, vá em Create a repository (criar um repositório)         para começar um novo projeto.
+    O conceito de um repósitorio baseia-se básicamente em um "local" onde serão armazenados seus arquivos, esses arquvivos podem ser de diversos tipos ( 
+    códigos, imagens, áudios, vídeos ou qualquer coisa relacionada a esse projeto).
+    Para se iniciar um repositório, vá ao diretório escolhido para criar o repositório e execute o comando:
+
+    `git init`
  
 2. Como fazer o primeiro commit em um projeto.
 
-   O Git commit vai ser um comando a ser utilizado a vida toda, caso você não queria perder seus projetos, deve sempre se atentar,caso ao estar alterando/modificando o 
-   o seu projeto, deve-se sempre se atentar em qualquer modificação em dar o comando GIT COMMIT (terminal) para salvar seu trabalho e não passar uma raiva num futuro      distante. 
+   O comando **git commit** irá criar uma versão ou um ponto na linha do tempo do repositório. Esse comando serve tanto para notificar ao repositório que houve uma alteração ou inserção quanto a deleção de arquivos do repositório local.
+
+   `git commit -m <mensagem>`
  
 
 3.	Como realizar commit de mudanças.
@@ -27,13 +32,11 @@ Desenvolvido por Santiago Fleitas e Matheus Ferreira.
 
 4.	Como compartilhar suas mudanças com outras pessoas da equipe.
 
-   O git possui uma ferramenta responsável por facilitar a questão de compartilhar mudanças com um número de pessoas, sejam eles uma dupla,trio, quarteto e até um        grupo com N pessoas. O nome da ferramenta é o BRANCH, ele se caracteriza como um ponteiro para alterações feitas nos arquivos de um projeto,é bastante util no          conceito de alterar/corrigir alguma coisa do projeto e querer preservar o código base. Para poder fazer um compartilhamento de mudanças com segurança, deve- se 
-   seguir os seguintes passos:
-   
-   (1) - Criar um novo Branch para o trabalho.
-   (2) - Confirmar alterações.
-   (3) - Envie por push o Branch para compartilhá-lo com a equipe.
-   
+   Para poder compartilhar as suas mudanças com outras pessoas será necessário disponibilizar o repositório em alguma plataforma online que seja de fácil acesso para todos, dentre essas plataformas de repositórios online temos o **GitHub** e o **GitLab** por exemplo, onde podemos hospedar um repositório online e todos os desenvolvedores poderão desenvolver seus códigos em seus repositórios locais (em suas próprias máquinas) e mandar seus commits para a nuvem (repositório remoto).
+
+![image](https://user-images.githubusercontent.com/69471715/163996511-cb8ec351-70e8-4d7c-95aa-d805e29f9a3d.png)
+
+
 5.	Como desfazer alterações.
 
    Graças a Deus, no git é possivel desfazer alterações, porém ele possui 3 maneiras (git revert,git reeset,git reflog) e cada uma dessas maneiras atua de um jeito       específico na questão de desfazer alguma coisa no projeto em questão.
@@ -52,12 +55,11 @@ Desenvolvido por Santiago Fleitas e Matheus Ferreira.
    
 7.	Como usar branches.
 
-   Como explicado no 4️⃣, o branch se caracteriza como um ponteiro para alterações feitas nos arquivos de um projeto. Um branch no Git é simplesmente um ponteiro          móvel para um desses commits. O nome do branch padrão no Git é master (O branch "master" no Git não é um branch especial. É exatamente como qualquer outra              ramificação). Conforme você começa a fazer commits, você recebe um branch master que aponta para o último commit que você fez.Cada vez que você faz um novo commit,    ele avança automaticamente.
+   As branches são ramificações ou variações disponíveis no nosso projeto, fazendo uma analogia à série de televisão Loki, as branches são "diferentes linhas do tempo no universo", podemos separar branches para determinados objetivos, por exemplo, teremos uma branch chamada **main** que será a principal do nosso código, ela representa o resultado ou produto final e estável, porém podemos desenvolver paralelamente novas funcionalidades para o produto através *branches*, podemos criar uma branch que represente por exemplo uma melhoria no catálogo de produtos.
    
-   Criando um branch: git branch testing (Isso cria um novo ponteiro para o mesmo commit em que você está atualmente).
-   Alternando entre branches: git checkout testing (Para mudar para um branch existente, você executa o comando git checkout).
-   
-   
+   Criando um branch: `git branch testing`
+   Alternando entre branches: `git checkout testing (Para mudar para um branch existente, você executa o comando git checkout).`
+   Criando e acessando imediatamente: `git checkout -b <nomeDaBranch>`
    
 8.	Como encontrar bugs (git diff, git log, git bisect, git blame).
 
