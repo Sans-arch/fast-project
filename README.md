@@ -45,8 +45,19 @@ Desenvolvido por Santiago Fleitas e Matheus Ferreira.
   GIT REFLOG Com este comando você consegue ter acesso aos logs de referências, também conhecidos como reflogs, de cada um dos commits. A partir disso, você consegue                deletar ou realizar outras operações com cada uma das referências.
    
 6.	Como resolver conflitos de merge.
+   O Conflito de merge irá acontecer quando o mesmo arquivo,trecho ou linha de código é modificada por duas versões diferentes e essãs versões podem ser                  automáticamente mescladas, ocasionando o conflito, esses conflitos podem acontecer tanto a mescmar branches, quanto commits dentro do própio branch. Porém existe      resolução para resolver conflitos do GIT:
+   
+   (1) deve-se localizar todos os arquivos que tiveram conflito, logo deve ser inspecionadas todas as mensagens de conflito que aparecem naquele momento.
+   (2) Para sanar o conflito, é necessário alterar o arquivo que contenha apenas uma versão, assim, deletando o código incorreto e removendo marcações de conflito.
    
 7.	Como usar branches.
+
+   Como explicado no 4️⃣ , o branch se caracteriza como um ponteiro para alterações feitas nos arquivos de um projeto. Um branch no Git é simplesmente um ponteiro        móvel para um desses commits. O nome do branch padrão no Git é master (O branch "master" no Git não é um branch especial. É exatamente como qualquer outra              ramificação). Conforme você começa a fazer commits, você recebe um branch master que aponta para o último commit que você fez.Cada vez que você faz um novo commit,    ele avança automaticamente.
+   
+   Criando um branch: git branch testing (Isso cria um novo ponteiro para o mesmo commit em que você está atualmente).
+   Alternando entre branches: git checkout testing (Para mudar para um branch existente, você executa o comando git checkout).
+   
+   
    
 8.	Como encontrar bugs (git diff, git log, git bisect, git blame).
 
