@@ -1,16 +1,11 @@
 const express = require('express');
 const app = express();
+const router = require('./src/controllers/usersController');
 
-const responseFunctions = require('./src/requestResponse');
+app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.json({
-    message: responseFunctions.responseConfirmation()
-  })
-});
+app.use(router);
 
-app.get("/users", (req, res) => {
-  res.json(responseFunctions.responseUsers());
-});
 
-app.listen(3000, () => console.log(`Running on port 3000 at http://localhost:3000`));
+// app.listen(process.env.port || 3004, () => console.log(`Running on port 3000 at http://localhost:3000`));
+module.exports = app;
