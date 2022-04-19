@@ -35,6 +35,14 @@ Desenvolvido por Santiago Fleitas e Matheus Ferreira.
    (3) - Envie por push o Branch para compartilhá-lo com a equipe.
    
 5.	Como desfazer alterações.
+
+   Graças a Deus, no git é possivel desfazer alterações, porém ele possui 3 maneiras (git revert,git reeset,git reflog) e cada uma dessas maneiras atua de um jeito       específico na questão de desfazer alguma coisa no projeto em questão.
+  
+  GIT REVERT: Forma mais segura de “desfazer” um commit, pois ele não apaga o commit do histórico. O que ele faz é pegar as alterações do commit que você quer reverter               e criar um novo commit com essas alterações desfeitas. exemplo: "git revert 11a5b".
+  
+  GIT RESET: Caso de você precisar desfazer um commit que não é o commit mais recente e sim um mais antigo,o revert cria um novo commit que faz o reverso do commit                  especificado,ou seja,se o commit adicionou um arquivo, o revert remove, se editou uma linha,volta ao que era antes. Exemplo: "git revert 11a5b".
+  
+  GIT REFLOG Com este comando você consegue ter acesso aos logs de referências, também conhecidos como reflogs, de cada um dos commits. A partir disso, você consegue                deletar ou realizar outras operações com cada uma das referências.
    
 6.	Como resolver conflitos de merge.
    
