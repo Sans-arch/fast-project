@@ -1,15 +1,11 @@
 const request = require('supertest');
-const app = require('../../index');
+const router = require('../routes');
 
 describe('Testando app server', () => {
-  it('creating user', async () => {
-    const res = await request(app)
-    .post('/users')
-    .send({
+  it('creating user', () => {
+    request(router).post('/users').send({
       name: 'Lucas',
       password: 'Jose'
-    });
-
-    expect(res.body).toHaveProperty('message');
+    }).then(res => expect(res.body).toHaveProperty('message'));
   });
 });

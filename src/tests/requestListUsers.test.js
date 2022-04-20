@@ -1,8 +1,8 @@
 const request = require('supertest');
-const app = require('../../index');
+const routes = require('../routes')
 
 describe('Testando app server', () => {
   it('return the list of users', () => {
-    request(app).get('/users').then(res => expect(res.status).toEqual(200))
+    request(routes).get('/users').then(res => expect(res.status).toEqual(200))
   });
 });
